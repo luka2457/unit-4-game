@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1 class="welcome">Welcome!</h1>
+
+    <p class="rules">To start off this game, you will be given a random number. You will then have to click on the crystals and try to match
+        your number with the number you were given. If you match it, congradulations! You've won! However, if you go over
+        that number... you will lose. You must click on each crystal to find out how many numbers it has on it so you can
+        estimate which ones you need to win the game. Good Luck!</p>
+    <div>Wins:<div id="wins">0</div></div>
+    <div>Loses:<div id="loses">0</div></div>
+    <div>
+        <strong>Random Number:</strong>
+        <div id="randomNum"></div>
+    </div>
+    <img class="img" id="crystal1" src="crystal.png">
+    <img class="img" id="crystal2" src="crystal.png">
+    <img class="img" id="crystal3" src="crystal.png">
+    <img class="img" id="crystal4" src="crystal.png">
+
+
+    <div>Total Score:
+        <div id="totalScore"></div>
+    </div>
+
+
+
+    <script type="text/javascript" src="game.js"> </script>
+</body>
+
+</html>
