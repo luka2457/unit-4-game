@@ -5,39 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-    <title>Document</title>
+    <title>Luke's Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-    <h1 class="welcome">Welcome!</h1>
-
-    <p class="rules">To start off this game, you will be given a random number. You will then have to click on the crystals and try to match
-        your number with the number you were given. If you match it, congradulations! You've won! However, if you go over
-        that number... you will lose. You must click on each crystal to find out how many numbers it has on it so you can
-        estimate which ones you need to win the game. Good Luck!</p>
-    <div>Wins:<div id="wins">0</div></div>
-    <div>Loses:<div id="loses">0</div></div>
-    <div>
-        <strong>Random Number:</strong>
-        <div id="randomNum"></div>
+    <div class="row">
+        <header class="col text-center">
+            <h2>Dare To Play?</h2>
+        </header>
     </div>
-    <img class="img" id="crystal1" src="crystal.png">
-    <img class="img" id="crystal2" src="crystal.png">
-    <img class="img" id="crystal3" src="crystal.png">
-    <img class="img" id="crystal4" src="crystal.png">
+    <div class="container">
+        <div class="row">
+            <strong>Instructions:</strong>
+        </div>
+        <div class="row">
+            <p>To start off this game, you will be given a random number. You will then have to click on the crystals and try
+                to match your number with the number you were given. If you match it, congradulations! You've won! However,
+                if you go over that number... you will lose. You must click on each crystal to find out how many numbers
+                it has on it so you can estimate which ones you need to win the game. Good Luck!</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>Wins:
+                    <div id="wins">0</div>
+                </div>
+                <div>Loses:
+                    <div id="loses">0</div>
+                </div>
+            </div>
 
-
-    <div>Total Score:
-        <div id="totalScore"></div>
+            <div class="col">Total Score:
+                <div id="totalScore">0</div>
+            </div>
+        </div>
+        <div>
+            <strong>Random Number:</strong>
+            <div id="randomNum"></div>
+        </div>
+        <img class="img-responsive" id="crystal1" src="assets/images/blue_diamond.png">
+        <img class="img-responsive" id="crystal2" src="assets/images/blue_diamond.png">
+        <img class="img-responsive" id="crystal3" src="assets/images/blue_diamond.png">
+        <img class="img-responsive" id="crystal4" src="assets/images/blue_diamond.png">
     </div>
-
-
-
-    <script type="text/javascript" src="game.js"> </script>
+    <footer class="sticky-bottom">
+        <a href="https://luka2457.github.io/Bootstrap-Portfolio/portfolio.html">Luke's Portfolio</a>
+    </footer>
+    <script type="text/javascript" src="assets/javascript/game.js"> </script>
 </body>
 
 </html>

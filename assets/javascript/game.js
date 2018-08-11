@@ -8,22 +8,14 @@ var totalScore = 0;
 var wins = 0;
 var loses = 0;
 
-
-
-
 $(document).ready(function () {
 
     //functions
     function pickRandomCrystal() {//generates random crystal numbers each game
-    
-    crystal1 = Math.floor((Math.random() * 11) + 1);
-    
-    crystal2 = Math.floor((Math.random() * 11) + 1);
-    
-    crystal3 = Math.floor((Math.random() * 11) + 1);
-    
-    crystal4 = Math.floor((Math.random() * 11) + 1);
-    
+        crystal1 = Math.floor((Math.random() * 11) + 1);
+        crystal2 = Math.floor((Math.random() * 11) + 1);
+        crystal3 = Math.floor((Math.random() * 11) + 1);
+        crystal4 = Math.floor((Math.random() * 11) + 1);
     }
 
     function pickRandomNum() {
@@ -34,7 +26,7 @@ $(document).ready(function () {
     }
 
     function clickCrystals() {
-        //adding crystalmeth to the tweekers
+        //adding crystal meth to the tweekers
         $("#crystal1").click(function () {
             totalScore += crystal1;
             $("#totalScore").text(totalScore);
@@ -55,10 +47,7 @@ $(document).ready(function () {
             $("#totalScore").text(totalScore);
             numberCheck();
         })
-
     }
-
-
 
     //reset and win and lose
     function resetGame() {
@@ -67,15 +56,12 @@ $(document).ready(function () {
         totalScore = 0;
     }
 
-
     function numberCheck() {
-
         if (totalScore === randomNum) {
             alert("You're a winner!");
             wins++;
             $("#wins").text(wins);
             resetGame();
-
         }
         if (totalScore > randomNum) {
             alert("You're a crystal meth loser");
@@ -84,6 +70,8 @@ $(document).ready(function () {
             resetGame();
         }
     }
+
+    //initate/call functions
     pickRandomNum();
     clickCrystals();
 
