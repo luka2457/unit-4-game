@@ -25,10 +25,10 @@
             <strong>Instructions:</strong>
         </div>
         <div class="row">
-            <p>To start off this game, you will be given a random number. You will then have to click on the crystals and try
-                to match your number with the number you were given. If you match it, congradulations! You've won! However,
-                if you go over that number... you will lose. You must click on each crystal to find out how many numbers
-                it has on it so you can estimate which ones you need to win the game. Good Luck!</p>
+            <p>The objective of the game is to make your <color class="blue">crystals number</color> equal the target number without going over. For every
+                game, each crystal holds a different value. You must click on each crystal to find out how much to add in
+                order to hit your target number! May the odds be forever in your favor!
+            </p>
         </div>
         <div class="row">
             <div class="col">
@@ -39,19 +39,23 @@
                     <div id="loses">0</div>
                 </div>
             </div>
-
-            <div class="col">Total Score:
-                <div id="totalScore">0</div>
+            <div class="col">
+                <div class="blue">Crystals Number:
+                    <div id="totalScore">0</div>
+                </div>
+                <div>
+                    <strong>Target Number:</strong>
+                    <div id="randomNum"></div>
+                </div>
             </div>
         </div>
-        <div>
-            <strong>Random Number:</strong>
-            <div id="randomNum"></div>
+        <div class="row">
+            <img class="img-responsive col-3-md" id="crystal1" src="assets/images/blue_diamond.png">
+            <img class="img-responsive col-3-md" id="crystal2" src="assets/images/blue_diamond.png">
+            <img class="img-responsive col-3-md" id="crystal3" src="assets/images/blue_diamond.png">
+            <img class="img-responsive col-3-md" id="crystal4" src="assets/images/blue_diamond.png">
         </div>
-        <img class="img-responsive" id="crystal1" src="assets/images/blue_diamond.png">
-        <img class="img-responsive" id="crystal2" src="assets/images/blue_diamond.png">
-        <img class="img-responsive" id="crystal3" src="assets/images/blue_diamond.png">
-        <img class="img-responsive" id="crystal4" src="assets/images/blue_diamond.png">
+
     </div>
     <footer class="sticky-bottom">
         <a href="https://luka2457.github.io/Bootstrap-Portfolio/portfolio.html">Luke's Portfolio</a>

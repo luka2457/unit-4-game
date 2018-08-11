@@ -1,5 +1,15 @@
+body{
+background: tan;
+}
+
+.container {
+    background: white;
+}
 img {
-    max-width:150px;
+    max-height:150px;
+}
+.row {
+    padding: 1%;
 }
 
 footer {
@@ -13,5 +23,9 @@ footer {
     opacity: 0.88;
 }
 a {
-    color: #4aaaa5;
+    color:#17a2b8;
+}
+
+.blue {
+    color:#17a2b8;
 }
