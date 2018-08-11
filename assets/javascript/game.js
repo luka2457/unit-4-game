@@ -64,7 +64,7 @@ $(document).ready(function () {
             resetGame();
         }
         if (totalScore > randomNum) {
-            alert("You're a crystal meth loser");
+            alert("No crystals for you!");
             loses++;
             $("#loses").text(loses);
             resetGame();
