@@ -4,6 +4,9 @@ background: tan;
 
 .container {
     background: white;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
 }
 img {
     max-height:150px;
